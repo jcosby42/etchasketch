@@ -1,11 +1,31 @@
+/*This was in the original draft. Gonna try using divs and flex instead*/
+/*
 span{
     display: inline-block;
     width: 30px;
     height: 30px;
     border: 2px solid black;
+}*/
+body{
+    background-color: beige;
+}
+#canvas{
+/*    display: flex;*/ /*Don't think I need this, cos I want the rows to stack*/
+    align-self: center;
+    background-color: white;
+    width: 512px;
+    border: 1px solid hotpink;
 }
 
-#canvas{
-    width: 544px;
+.row{
+    display:flex;
+}
+
+.element{
     border: 1px solid black;
+    display: flex;
+    width: 30px;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
 }

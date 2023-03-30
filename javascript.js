@@ -4,8 +4,10 @@ function createGrid(){
     let width = 16, height = 16;
     for (let i = 0; i < height; i++){
         const newDiv = document.createElement("div");
+        newDiv.classList.add("row");
         for (let j = 0; j < width; j++){
-            const newSpan = document.createElement("span");
+            const newSpan = document.createElement("div");
+            newSpan.classList.add("element");
             const newContent = document.createTextNode("*");
             newSpan.appendChild(newContent);
             newDiv.appendChild(newSpan);
