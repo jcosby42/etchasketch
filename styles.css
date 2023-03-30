@@ -10,8 +10,7 @@ body{
     background-color: beige;
 }
 #canvas{
-/*    display: flex;*/ /*Don't think I need this, cos I want the rows to stack*/
-    align-self: center;
+    margin: auto;
     background-color: white;
     width: 512px;
     border: 1px solid hotpink;
@@ -26,6 +25,8 @@ body{
     display: flex;
     width: 30px;
     height: 30px;
-    align-items: center;
-    justify-content: center;
+}
+
+.hovered{
+    background-color: black;
 }
