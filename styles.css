@@ -9,6 +9,12 @@ span{
 body{
     background-color: beige;
 }
+
+button{
+    margin: 20px;
+    text-align: center;
+}
+
 #canvas{
     margin: auto;
     background-color: white;
@@ -30,3 +36,16 @@ body{
 .hovered{
     background-color: black;
 }
+
+#buttonbar{
+    background-color: darkorange;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px 100px;
+    padding: 5px;
+
+}
+
+/*todo: finish formatting the button tray
+figure out how to change background color to selected color
+probably add current color name to class?*/
