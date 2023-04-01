@@ -1,17 +1,11 @@
-/*This was in the original draft. Gonna try using divs and flex instead*/
-/*
-span{
-    display: inline-block;
-    width: 30px;
-    height: 30px;
-    border: 2px solid black;
-}*/
 body{
     background-color: beige;
 }
 
 button{
+    width: 100px;
     margin: 20px;
+    padding: 10px;
     text-align: center;
 }
 
@@ -19,7 +13,7 @@ button{
     margin: auto;
     background-color: white;
     width: 512px;
-    border: 1px solid hotpink;
+    border: 1px solid darkorange;
 }
 
 .row{
@@ -41,7 +35,7 @@ button{
     background-color: darkorange;
     display: flex;
     justify-content: space-evenly;
-    margin: 10px 100px;
+    margin: 10px;
     padding: 5px;
 
 }
