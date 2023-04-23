@@ -12,7 +12,7 @@ button{
 #canvas{
     margin: auto;
     background-color: white;
-    width: 512px;
+    width: 50%;    /*width: 512px;*/
     border: 1px solid darkorange;
 }
 
@@ -23,8 +23,10 @@ button{
 .element{
     /*border: 1px solid black;*/
     display: flex;
-    width: 5px;
-    height: 5px;
+    flex: 1 1 0;
+    aspect-ratio: 1/1;
+    /*height: 5px;*/
+    background-color: lightblue;
 }
 
 .hovered{
@@ -40,6 +42,11 @@ button{
 
 }
 
-/*todo: finish formatting the button tray
-figure out how to change background color to selected color
-probably add current color name to class?*/
+#reset{
+    background-color: lightcoral;
+}
+
+#resize{
+    background-color: lightcoral;
+}
+

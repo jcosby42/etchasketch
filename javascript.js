@@ -9,17 +9,6 @@ for (let btn of colors){
     });   
 }
 
-let reset = document.getElementById("reset");
-reset.addEventListener('click', () => {
-    let grid = document.getElementsByClassName("element");
-    for (let e of grid){
-        /*if (e.classList.contains("hovered")){
-            e.classList.remove("hovered");
-        }*/
-        if (e.style.backgroundColor !=='none') e.style.backgroundColor = 'none';
-    }
-});
-
 function createGrid(size = 100){
     const canvas = document.getElementById("canvas");
     for (let i = 0; i < size; i++){
@@ -38,6 +27,22 @@ function createGrid(size = 100){
     }
 };
 
+
+let reset = document.getElementById("reset");
+reset.addEventListener('click', () => {
+    let currentGrid = document.querySelectorAll(".element");
+    for (let e of currentGrid){
+        e.style.backgroundColor = "";
+    };
+});
+
+let resize = document.querySelector("resize");
+reset.addEventListener('click', () => {
+    let currentGrid = document.querySelectorAll(".element");
+    for (let e of currentGrid){
+        e.style.backgroundColor = "";
+    };
+});
 
 createGrid();
 
