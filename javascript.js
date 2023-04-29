@@ -36,12 +36,16 @@ reset.addEventListener('click', () => {
     };
 });
 
-let resize = document.querySelector("resize");
-reset.addEventListener('click', () => {
-    let currentGrid = document.querySelectorAll(".element");
-    for (let e of currentGrid){
-        e.style.backgroundColor = "";
-    };
+let resize = document.getElementById("resize");
+resize.addEventListener('click', () => {
+    let currentCanvas = document.getElementById("canvas");
+    while (currentCanvas.hasChildNodes()){
+        currentCanvas.removeChild(currentCanvas.firstChild);
+    }
+    let size = parseInt(prompt("Size?"));
+    if (size < 10) size = 10;
+    if (size > 100) size = 100;
+    createGrid(size);
 });
 
 createGrid();
